@@ -1,0 +1,292 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Girl's night out</title>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Mansalva&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Overlock&display=swap" rel="stylesheet">
+<link href="styles.css" rel="stylesheet" />
+<script src="jquery-3.7.0.min.js"></script> 
+<script>
+$(document).ready(function() {
+   
+
+
+   var currentSlide = 0;
+    var totalSlides = $(".slide").length;
+
+    function showSlide(index) {
+        $(".slide").hide();
+        currentSlide = index;
+        $(".slide").eq(currentSlide).show();
+    }
+
+    function nextSlide() {
+        var nextIndex = (currentSlide + 1) % totalSlides;
+        showSlide(nextIndex);
+    }
+
+    function prevSlide() {
+        var prevIndex = (currentSlide - 1 + totalSlides) % totalSlides;
+        showSlide(prevIndex);
+    }
+
+    $("#prevSlide, .left-arrow").on("click", function() {
+        prevSlide();
+    });
+
+    $("#nextSlide, .right-arrow").on("click", function() {
+        nextSlide();
+    });
+
+    showSlide(currentSlide);
+
+
+      
+  });
+
+</script>
+</head>
+<body>   
+    <header class="navbar">
+        <nav>
+            <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="articles.html">Articles</a></li>
+                  <li><a href="movies.html">Movies</a></li>
+                  <li><a href="tvshows.html">Tv shows</a></li>
+                  <li><a href="collections.html">Collections</a></li>
+            </ul>
+        </nav>
+  </header>
+
+  <section class="video-slider">
+    <button id="prevSlide" class="slide-button left-arrow">&#9664;</button>
+    <button id="nextSlide" class="slide-button right-arrow">&#9654;</button>
+
+    <div class="slide">
+        <h1 class="pagetitle">Bottoms</h1>
+        <video autoplay loop muted>
+            <source src="images/bottoms.mp4" type="video/mp4">
+            <!-- video source: https://www.youtube.com/watch?v=vH5NAahf76s -->
+        </video>
+        <p class="slide-text"> Two queer best friends who pine for popular girls at school, create a fight club to grow closer to their crushes. Things spiral out of control when they're caught in a lie. 
+            
+        </p>
+        <a href="movies.html#BottomsSect" class="video-button">Read more</a>
+    </div>
+    <div class="slide">
+        <h1 class="pagetitle">Barbie</h1>
+        <video autoplay loop muted>
+            <source src="images/Barbiemovi.mp4" type="video/mp4">
+            <!-- video source: https://www.youtube.com/watch?v=pBk4NYhWNMM -->
+        </video>
+         
+         <p class="slide-text"> Used to a matriarchal society, Barbie one day is struck with negative thoughts such as mortality. This propels her into the real world. Where her journey serves as an empowering tale of self-discovery and learns the enduring power of imagination.</p>
+        <a href="movies.html#BarbieSect" class="video-button">Read more</a>
+    </div>
+    <div class="slide">
+        <h1 class="pagetitle">Fairplay</h1>
+        <video autoplay loop muted>
+            <source src="images/Fairplay.mp4" type="video/mp4">
+            <!-- video source: https://www.youtube.com/watch?v=vICUPlr3EEI -->
+        </video>
+        <p class="slide-text"> Blending in and hiding their relationship was a temporary solution for a young couple employed at a cutthroat hedgefund. When Emily is given an unexpected promotion, their relationship shatters as Luke's insecurities cloud his perceptions of Emily. 
+            
+        </p>
+        <a href="movies.html#FairplaySect" class="video-button">Read more</a>
+    </div>
+
+  </section>
+
+
+  <section class="page-container" >
+
+    <div id="text-to-repeat">
+        <span>Line 1</span>
+        <span>Line 2</span>
+        <span>Line 3</span>
+        <span>Line 4</span>
+        <span>Line 5</span>
+        <span>Line 6</span>
+    </div>
+    <div id="background-element">
+        Girls night Girls night Girls night
+        Girls night Girls night Girls night 
+        Girls night Girls night Girls night
+        Girls night Girls night Girls night  
+        Girls night Girls night Girls night
+        Girls night Girls night Girls night 
+        Girls night Girls night Girls night
+        Girls night Girls night Girls night 
+        Girls night Girls night Girls night
+        Girls night Girls night Girls night 
+        Girls night Girls night Girls night
+        Girls night Girls night Girls night
+        Girls night Girls night Girls night
+        Girls night Girls night Girls night 
+        Girls night Girls night Girls night
+        Girls night Girls night Girls night 
+        Girls night Girls night Girls night
+        Girls night Girls night Girls night 
+        Girls night Girls night Girls night
+        Girls night Girls night Girls night
+        Girls night Girls night Girls night
+        Girls night Girls night Girls night 
+        Girls night Girls night Girls night
+        Girls night Girls night Girls night
+        Girls night Girls night Girls night
+        Girls night Girls night Girls night
+        Girls night Girls night Girls night 
+        Girls night Girls night Girls night 
+        Girls night Girls night Girls night
+        Girls night Girls night Girls night 
+        Girls night Girls night Girls night
+        Girls night Girls night Girls night 
+        Girls night Girls night    
+    
+    </div>
+    <div id="BottomsSect" class="TemplateBase">
+        <img src="images/Comp 4_00000.png" id="wndow">
+        <!-- image source: canva.com -->
+        <img src="images/cloudpixel_00000.png" id="cloud">
+        <!-- image source: canva.com -->
+
+        <div class="star-container">
+            <!-- image sourced:https://soulofkiran.itch.io/pixel-art-animated-star -->
+          <img src="images/Pre-comp 14_00000.png" class="starimg">
+          <img src="images/Pre-comp 14_00000.png" class="starimg">
+          <img src="images/Pre-comp 14_00000.png" class="starimg">
+          <img src="images/Pre-comp 14_00000.png" class="starimg">
+        </div>
+        <div class="headingText">
+            <h3> "I really value when people use violence for me, it's actually one of my love languages"
+            </h3>
+            <h4> - Josie    
+            </h4>
+        </div>
+        <h2> Bottoms: </h2>
+        <p>
+             The main characters Pj and Josie aim to lose their virginities and are looking for them to climb the social ladder. They're seen as losers, loners and are lesbians. So they decided to create a fight club based on a ridiculous lie that they spent their summer in juvie. For some reason it worked. 
+
+        <br>
+        <br>
+              The quote above pretty much summarizes the main themes of the movie. It was over the top, weird but hilarious. The jokes used in the movie not only sting but leave a lasting impression. It doesn't shy away from the use of satire on themes of violence and feminism. In fact it embraces it. It stands out among the usual high school comedic dramas that cyle the same themes over and over again. The gore was a surprising twist along with the vulgar language. But with all the violence ironically brought the whole school together all thanks to this "fight club". The club became a safe space for the women to express their own experiences with men. Making light off some very serious and dangerous scenarios. The role Pj and Josie play is traditonally done by straight white male characters. It's interesting to see this subversion, because when you picture the role and imagine males in their stead it would not fit the times. 
+        <br>
+        <br>
+              Overall It's a must watch with friends if you want to laugh out loud and experience a few jaw dropping moments. 
+        </p>
+    </div>
+        <br>
+        <br>
+        <br>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/vH5NAahf76s?si=xXBVwhFKhBJZCskb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>      
+  
+  </section>
+  <section class="FpContainer">
+  <div class="shape-divider">
+    <!-- used this app: https://www.shapedivider.app/ -->
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+            <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+            <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+        </svg>
+    </div>
+    <div id="FairplaySect" class="TemplateBase">
+        <img src="images/Comp 4_000011.png" id="wndowf">
+        <!-- image source: canva.com -->
+        <img src="images/cloudpixel_00000.png" id="cloudf">
+        <!-- image source: canva.com -->
+
+        <div class="star-container" id="star-container1">
+            <!-- image sourced:https://soulofkiran.itch.io/pixel-art-animated-star -->
+            <img src="images/Pre-comp 14_00000.png" class="starimg">
+            <img src="images/Pre-comp 14_00000.png" class="starimg">
+            <img src="images/Pre-comp 14_00000.png" class="starimg">
+            <img src="images/Pre-comp 14_00000.png" class="starimg">
+            <img src="images/Pre-comp half_00.png" class="starimg">
+        </div>
+        <div class="headingText" id="FPHeading">
+            <h3> "You don't get far by being nice"
+            </h3>
+            <h4> - Luke  </h4>
+            <h2> FairPlay: </h2>
+        </div>
+
+
+        <p>
+             A newly engaged couple is vying for a promotion at a competitive hedge fund. Once this is achieved they will stop hiding their relationship from the public, this is due to the company's strict policies. When Emily is promoted, Luke slowly starts to resent her out of his insecurities. Thus affecting their relationship, drastically exposing Luke's deep rooted issues 
+
+        <br>
+        <br>
+              Unexpectedly this movie captivated my attention. The acting was phenomenal and i almost forgot that there was tv in front me. It was evident the screenplay came from experience, which was a scary reality check. Like Emily there are women experiencing the undermining of their own integrity and skill within the workplace. The switch from supportive lover to a maniacal jealous partner was both thrilling and nerve wracking. Intimacy in the film became symbolic of the power dynamic between the couple. At first the passion was equal and eventually none existent as the divide between Emily and Luke became evident.  Her insticts and work ethic was a glaring sign of her competence for the role. In parallel to Emily's sucesses fueled Luke's misery and further he became a shell of the man she loved.
+        <br>
+        <br>
+             In totality it is a must watch at least once, thematically it addressed issues at the work place experienced by women. Prepare yourself as there as some uncomfortable scenes. 
+        </p>
+        <br>
+        <br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/vICUPlr3EEI?si=nKOwcPUqgGUfeyH5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+</section>
+
+
+<section class="BContainer">
+    <div class="shape-divider-top">
+        <!-- used this app: https://www.shapedivider.app/ -->
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+            <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+            <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+        </svg>
+    </div>
+    <div id="BarbieSect"class="TemplateBase">
+        <!-- image sourced:https://soulofkiran.itch.io/pixel-art-animated-star -->
+        <img src="images/Comp 4_000012.png" id="wndowf">
+        <!-- image source: canva.com -->
+        <img src="images/cloudpixel_00000.png" id="cloudf">
+        <!-- image source: canva.com -->
+
+        <div class="star-container" id="star-container2">
+            <img src="images/Pre-comp 14_00000.png" class="starimg">
+            <img src="images/Pre-comp 14_00000.png" class="starimg">
+            <img src="images/Pre-comp 14_00000.png" class="starimg">
+            <img src="images/Pre-comp 14_00000.png" class="starimg">
+            
+        </div>
+        <div class="headingText" id="rdHeading">
+            <h3> "We mothers stand still so our daughters can look back and see how far they have come.
+            </h3>
+            <h4> - Ruth  </h4>
+            <h2> Barbie: </h2>
+        </div>
+        <p>
+             Barbie is thrust into an unexpected adventure that challenges her happy and colorful, matriachal world. Now being in the real world she realises that the feminist eden that she's experienced her whole life bears no influence to the real world at all. 
+
+        <br>
+        <br>
+              Barbie was never intended to embody the ideal appearance for women; rather, she symbolises the diverse possibilities of womanhood. No matter what path they choose it's deemed possible in Barbieland. But this is not the case in the real world. The film further highlights the immeasurable standard that is held for women not just by society but the bar we set for ourselves. Ken's involvement in the film served as a subversion of the representation of women as a mere plot tool for males, shallow and unthinking. In the film Ken exists solely for Barbie's attention, challenging this stereotype. Although exaggerated and comedic the film points out the effects of a patriarchal world not just in real life but in an idealistic place like barbie land. 
+        <br>
+        <br>
+             Overall it may seem shallow and ridiculous on the first watch but thinking back there were so many mini allusions that can seem insignifcant. Like Barbie we are responsible for seeing ourselves as a perfectly imperfect individual. 
+        </p>
+        <br>
+        <br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/pBk4NYhWNMM?si=UhwuNM42Wto3VXeH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+    </div>
+
+</section>
+     
+</body>
+</html>
+
+
+
+
+
+

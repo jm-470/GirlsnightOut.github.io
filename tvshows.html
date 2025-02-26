@@ -1,0 +1,251 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Girl's night out</title>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Mansalva&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Overlock&display=swap" rel="stylesheet">
+<link href="styles.css" rel="stylesheet" />
+<script src="jquery-3.7.0.min.js"></script> 
+<script>
+$(document).ready(function() {
+   
+
+  var currentSlide = 0;
+    var totalSlides = $(".slide").length;
+
+    function showSlide(index) {
+        $(".slide").hide();
+        currentSlide = index;
+        $(".slide").eq(currentSlide).show();
+    }
+
+    function nextSlide() {
+        var nextIndex = (currentSlide + 1) % totalSlides;
+        showSlide(nextIndex);
+    }
+
+    function prevSlide() {
+        var prevIndex = (currentSlide - 1 + totalSlides) % totalSlides;
+        showSlide(prevIndex);
+    }
+
+    $("#prevSlide, .left-arrow").on("click", function() {
+        prevSlide();
+    });
+
+    $("#nextSlide, .right-arrow").on("click", function() {
+        nextSlide();
+    });
+
+    showSlide(currentSlide);
+
+
+      
+  });
+
+</script>
+</head>
+<body>   
+    <header class="navbar">
+        <nav>
+            <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="articles.html">Articles</a></li>
+                  <li><a href="movies.html">Movies</a></li>
+                  <li><a href="tvshows.html">Tv shows</a></li>
+                  <li><a href="collections.html">Collections</a></li>
+            </ul>
+        </nav>
+  </header>
+
+ <section class="video-slider">
+    <button id="prevSlide" class="slide-button left-arrow">&#9664;</button>
+    <button id="nextSlide" class="slide-button right-arrow">&#9654;</button>
+
+    <div class="slide">
+        <h1 class="pagetitle">Warrior Nun</h1>
+        <video autoplay loop muted>
+            <source src="images/WarriorNun.mp4" type="video/mp4">
+            
+        </video>
+        <p class="slide-text"> A young woman is raised from the dead with the use of a mysterious halo that was accidentally embedded behind her back. Unprepared from the upcoming battle against good and evil. Ava is tasked with protecting the world from demons and leading a secret religious order of nuns. 
+            
+        </p>
+        <a href="tvshows.html#WarriorNSect" class="video-button">Read more</a>
+    </div>
+    <div class="slide">
+        <h1 class="pagetitle">Queen Charlotte</h1>
+        <video autoplay loop muted>
+            <source src="images/QueenC.mp4" type="video/mp4">
+        </video>
+         
+         <p class="slide-text"> Based on the real life story of Queen Charlotte the story is centered around her marriage with King George and behind the scenes of this exemplar couple </p>
+        <a href="tvshows.html#QueenCSect" class="video-button">Read more</a>
+    </div>
+    <div class="slide">
+        <h1 class="pagetitle">Fairplay</h1>
+        <video autoplay loop muted>
+            <source src="images/Fairplay.mp4" type="video/mp4">
+            
+        </video>
+        <p class="slide-text"> Blending in and hiding their relationship was a temporary solution for a young couple employed at a cutthroat hedgefund. When Emily is given an unexpected promotion, their relationship shatters as Luke's insecurities cloud his perceptions of Emily. 
+            
+        </p>
+        <a href="movies.html#FairplaySect" class="video-button">Read more</a>
+    </div>
+
+  </section>
+
+  <section class="page-container" >
+
+    <div id="text-to-repeat">
+        <span>Line 1</span>
+        <span>Line 2</span>
+        <span>Line 3</span>
+        <span>Line 4</span>
+        <span>Line 5</span>
+        <span>Line 6</span>
+    </div>
+    <div id="background-element">
+        Girls night Girls night Girls night
+        Girls night Girls night Girls night 
+        Girls night Girls night Girls night
+        Girls night Girls night Girls night  
+        Girls night Girls night Girls night
+        Girls night Girls night Girls night 
+        Girls night Girls night Girls night
+        Girls night Girls night Girls night 
+        Girls night Girls night Girls night
+        Girls night Girls night Girls night 
+        Girls night Girls night Girls night
+        Girls night Girls night Girls night
+        Girls night Girls night Girls night
+        Girls night Girls night Girls night 
+        Girls night Girls night Girls night
+        Girls night Girls night Girls night 
+        Girls night Girls night Girls night
+        Girls night Girls night Girls night 
+        Girls night Girls night Girls night
+        Girls night Girls night Girls night
+        Girls night Girls night Girls night
+        Girls night Girls night Girls night 
+        Girls night Girls night Girls night
+        Girls night Girls night Girls night
+        Girls night Girls night Girls night
+        Girls night Girls night Girls night
+        Girls night Girls night Girls night 
+        Girls night Girls night Girls night 
+        Girls night Girls night Girls night
+        Girls night Girls night Girls night 
+        Girls night Girls night Girls night
+        Girls night Girls night     
+    
+    </div>
+    <div id="WarriorNSect" class="TemplateBase">
+        <img src="images/Comp 4_000013.png" id="wndow">
+        <!-- image source: canva.com -->
+        <img src="images/cloudpixel_00000.png" id="cloud">
+        <!-- image source: canva.com -->
+        <!-- image sourced:https://soulofkiran.itch.io/pixel-art-animated-star -->
+        <div class="star-container" id="star-container3">
+          <img src="images/Pre-comp 14_00000.png" class="starimg">
+          <img src="images/Pre-comp 14_00000.png" class="starimg">
+          <img src="images/Pre-comp 14_00000.png" class="starimg">
+          <img src="images/Pre-comp 14_00000.png" class="starimg">
+          <img src="images/Pre-comp half_00.png" class="starimg">
+        </div>
+        <div class="headingText">
+            <h3> "My whole life, I’ve dreamt about being dead. I leave my body and I see myself from the above. A normal girl... Until I wake up."
+            </h3>
+            <h4> - Ava    
+            </h4>
+        </div>
+        <h2> Warrior Nun s2: </h2>
+        <p>
+             In the end of season 1 we come to find out that the team has been tricked into unleashing a supposed "angel" into the world. Who goes by the name of Adriel. Thousand of years ago he was chose the first halo bearer and was assumed to be its owner. But instead we find out he has stolen it from his realm to serve his own purposes. 
+
+        <br>
+        <br>
+              The team seperates to give Ava an opportunity to train more in preparation for her encounter with Adriel. Whilst in comparison Adriel has convinced the masses into following his religious cult, brainwashing them to do his bidding. Eventually an attack on the OCS (Order of the Cruciform Sword) worldwide, brings the team back together to find a way to stop Adriel and his plan to rule the world. This season was action packed and written really well to progressively answer questions we've all been wanting to know since season 1. The pacing has improved drastically as well as the amount of well choreographed fight scenes. There's romance, comedy and more importantly "Freewheeling secret ass kicking nuns". What's more to ask for. 
+        <br>
+        <br>
+              The worldbuilding in this season has completely gotten me hooked there are still so many more unanswered questions and not enough episodes. The characters,have depth and there is a clear sense of development particularly in Ava this season who has grown in leaps and bounds. Far from the young woman who ran from reponsibilities every chance she got. Now she's willing to lead and make difficult decisions to protect the world but most importantly the people she loves. 
+        </p>
+    </div>
+        <br>
+        <br>
+        <br>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/acdP-NzBhjs?si=B652V2Y5wB_zusG0&amp;start=12" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </section>
+
+  <section class="FpContainer">
+  <div class="shape-divider">
+    <!-- used this app: https://www.shapedivider.app/ -->
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+            <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+            <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+        </svg>
+    </div>
+    <div id="QueenCSect" class="TemplateBase">
+        <img src="images/Comp 4_000014.png" id="wndowf">
+        <!-- image source: canva.com -->
+        <img src="images/cloudpixel_00000.png" id="cloudf">
+        <!-- image source: canva.com -->
+
+        <div class="star-container" id="star-container4">
+            <!-- image sourced:https://soulofkiran.itch.io/pixel-art-animated-star -->
+            <img src="images/Pre-comp 14_00000.png" class="starimg">
+            <img src="images/Pre-comp 14_00000.png" class="starimg">
+            <img src="images/Pre-comp 14_00000.png" class="starimg">
+            <img src="images/Pre-comp 14_00000.png" class="starimg">
+            <img src="images/Pre-comp half_00.png" class="starimg">
+        </div>
+        <div class="headingText" id="FPHeading">
+            <h3> "I will stand with you between the heavens and the Earth. I will tell you where you are. Do you love me?"
+            </h3>
+            <h4> - Charlotte  </h4>
+            <h2> Queen Charlotte: </h2>
+        </div>
+
+
+        <p>
+             Bethrothed to a young King George, Charlotte is forced out of her country to London. Alone with no family She learns to navigate through foreign customs while attempting to understand the gravity of Marriage with a King who will not see her.  
+
+        <br>
+        <br>
+              They both fall deeply in love with other but King George's illness drives a wedge between them and forces him to hide, afraid of scaring Charlotte away with his Psychosis. Charlotte is both stubborn and relentless and fights for their relationship unaware of George's condition. The show addresses issues of race in the Georgian era and delves into the sacrifices of a long term relationships particularly as being both a mother and a head of state. 
+        <br>
+        <br>
+             It is a must watch and is arguably the best Bridgerton story yet, praised by the critics and the general audience. The story itself is a heartbreaking nuance to a beautiful yet tragic love story that strengthens the monarchy. 
+        </p>
+        <br>
+        <br>
+        <iframe width="560" height="316" src="https://www.youtube.com/embed/oLtnNw0KT78?si=5AiJVuRLmEfwmz8y&amp;start=12" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen> 
+        </iframe>
+    </div>
+</section>
+
+
+<section class="BContainer">
+    <div class="shape-divider-top">
+        <!-- used this app: https://www.shapedivider.app/ -->
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+            <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+            <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+        </svg>
+    </div>
+
+</section>
+</body>
+</html>
+
+
+
+
+
+
