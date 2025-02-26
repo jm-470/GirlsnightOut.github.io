@@ -48,7 +48,7 @@ nav a {
     color: white;
     text-decoration: none;
     padding-top: 12px;
-    font-size: 30px;
+    font-size: 35px;
     font-family: 'Nothing You Could Do', cursive;
     text-shadow: 2px 2px #5c5c8a;
     transition: transform 0.3s;
@@ -88,6 +88,7 @@ nav a:hover {
 }
 
 .container {
+    display: flex;
     position: relative;
     overflow: hidden;
     width: 100%;
@@ -95,6 +96,12 @@ nav a:hover {
     margin-top: -36px;
 }
 
+#sectiontitle {
+  font-family: 'Mansalva';
+  font-size: 50px;
+  margin-left: 35%;
+  color: #f4b5c2;
+}
 @media screen and (max-width: 1500px) {
     nav a {
         font-size: 1.5em;
@@ -123,14 +130,14 @@ nav a:hover {
         margin: 3vmin;
     }
     h1.title {
-        font-size: 3em;
+        font-size: 4em;
         top: 11vmin;
         left: 60%;
         letter-spacing: 4px;
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
     nav a {
         font-size: 1em;
     }
@@ -138,15 +145,18 @@ nav a:hover {
         padding-top: 0.9vmin;
     }
     h1.title {
-        font-size: 2.3em;
+        font-size: 3.3em;
         top: 12vmin;
         left: 55%;
         text-shadow: 2px 5px #5c5c8a;
         letter-spacing: 5px;
     }
+    #sectiontitle {
+        font-size: 2.6em;
+    }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
     nav a {
         font-size: 0.6em;
     }
@@ -160,7 +170,12 @@ nav a:hover {
         text-shadow: 2px 5px #5c5c8a;
         letter-spacing: 5px;
     }
+ 
+    #sectiontitle {
+        font-size: 1.2em;
+    }
 }
+
 
 .firstwrap{
     position: relative;
@@ -170,13 +185,6 @@ nav a:hover {
 }
 
 
-.container {
-  position: relative;
-  height: 100vh;
-  background-size: cover;
-  background-position: center;
-  overflow: hidden;
-}
 
 #cloud{
   position: relative;
@@ -230,12 +238,7 @@ nav a:hover {
 
 }
 
-#sectiontitle {
-  font-family: 'Mansalva';
-  font-size: 50px;
-  margin-left: 35%;
-  color: #f4b5c2;
-}
+
 .column a{
   text-decoration: none;
 }
